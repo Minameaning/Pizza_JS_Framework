@@ -4,17 +4,16 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #a35c2c;
-  background-repeat: repeat-x;
+  
   background-size: cover;
   background-image: url(../images/pizza-background.png);
   background-blend-mode: lighten;
 }
 
-header {
-  padding: 20px;
+.pr-4{
+  padding-left: 1rem;
 }
-header h1 {
+.container-title {
   font-size: 50px;
   text-shadow: #ffffff 5px 3px;
   color: #412613;
@@ -27,33 +26,16 @@ header h1 {
 .container {
   background-color: rgba(225, 182, 157, 0.9);
   /* width: 50%; */
-  margin: 10px 20px;
+  margin: 20px 80px;
   padding: 60px;
   box-shadow: 10px 5px rgb(22, 44, 3);
 }
 
-.empty-box {
-  padding: 10px;
-}
-.detailsBox {
-  background-color: rgba(225, 182, 157, 0.9);
-  margin: 10px 30px;
-  display: inline-block;
-  justify-items: center;
-}
-h1 {
-  font-size: 30px;
-  color: #102820;
-}
+
 h3 {
   color: #102820;
 }
-.instructions-box {
-  display: grid;
-  justify-items: center;
-  border: 1px solid #ccc;
-  width: 100%;
-}
+
 #meals-table {
   display: block;
   padding: 20px;
@@ -88,8 +70,7 @@ input[type="text"] {
   transition: all 0.2s linear;
 }
 
-.style-1:hover,
-.goBack:hover {
+.style-1:hover {
   color: black;
   padding: 0.1em 1.2em;
   box-shadow: 10px 5px rgb(61, 41, 21);
@@ -109,14 +90,9 @@ a {
   box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50px;
   position: relative;
-  background-color: chocolate;
+  background-color: rgba(225, 182, 157, 0.9);
 }
 
-.card h2 {
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 40px;
-  text-transform: uppercase;
-}
 
 .card .row {
   position: relative;
