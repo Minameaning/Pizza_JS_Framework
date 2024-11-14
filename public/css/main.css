@@ -1,0 +1,226 @@
+* {
+  text-align: center;
+  font-family: "Bungee", cursive;
+  box-sizing: border-box;
+}
+body {
+  background-color: #a35c2c;
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-image: url(../images/pizza-background.png);
+  background-blend-mode: lighten;
+}
+
+header {
+  padding: 20px;
+}
+header h1 {
+  font-size: 50px;
+  text-shadow: #ffffff 5px 3px;
+  color: #412613;
+}
+
+.content {
+  min-height: 86vh;
+}
+
+.container {
+  background-color: rgba(225, 182, 157, 0.9);
+  /* width: 50%; */
+  margin: 10px 20px;
+  padding: 60px;
+  box-shadow: 10px 5px rgb(22, 44, 3);
+}
+
+.empty-box {
+  padding: 10px;
+}
+.detailsBox {
+  background-color: rgba(225, 182, 157, 0.9);
+  margin: 10px 30px;
+  display: inline-block;
+  justify-items: center;
+}
+h1 {
+  font-size: 30px;
+  color: #102820;
+}
+h3 {
+  color: #102820;
+}
+.instructions-box {
+  display: grid;
+  justify-items: center;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+#meals-table {
+  display: block;
+  padding: 20px;
+}
+th {
+  background-color: #431f13c6;
+  color: #caba9c;
+  padding: 10px;
+  font-size: 15px;
+}
+input[type="text"] {
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+.style-1,
+.style-2 {
+  padding: 0.1em 1em;
+  background: linear-gradient(
+    135deg,
+    rgba(56, 38, 38, 0.6),
+    rgba(19, 62, 39, 0.232)
+  );
+  border-radius: 10px;
+  border: 5px solid black;
+  font-size: 1.5em;
+  color: rgb(219, 200, 200);
+  text-shadow: 1px 2px 2px rgba(21, 39, 18, 0.2);
+  cursor: pointer;
+  text-align: center;
+  font-family: "Bungee", cursive;
+  transition: all 0.2s linear;
+}
+
+.style-1:hover,
+.goBack:hover {
+  color: black;
+  padding: 0.1em 1.2em;
+  box-shadow: 10px 5px rgb(61, 41, 21);
+}
+a {
+  color: rgb(111, 55, 34);
+  font-size: 20px;
+}
+
+/*contact us page*/
+
+.card {
+  width: 40%;
+  padding: 0px 0px 0px 0px;
+  margin: auto;
+  border: 6px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  position: relative;
+  background-color: chocolate;
+}
+
+.card h2 {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.card .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid: auto / auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-gap: 30px;
+}
+
+.card .row .col {
+  position: relative;
+  width: 100%;
+  margin: 30px 20px 40px 0;
+  transition: 0.5s;
+}
+
+.card .row .form-group {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+  /* position: absolute; */
+  width: 90%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 24px;
+  padding: 10px 0 10px 20px;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.card .row .form-group label {
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0 0 0 30px;
+  display: block;
+  pointer-events: none;
+}
+
+.row .col:nth-child(6) {
+  margin-top: 64px;
+}
+
+.card .row .form-group input:focus,
+.card .row .form-group textarea:focus {
+  border: 5px solid #ffffff;
+  transition: all 0.5s;
+}
+
+.card .row input[type="submit"] {
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 45px;
+  transition: all 0.4s;
+}
+
+.card .row input[type="submit"]:hover {
+  border: 5px solid rgba(255, 255, 255, 1);
+  color: #ffffff;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  .card .row {
+    grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h2 {
+    font-size: 34px;
+  }
+
+  .card .row input[type="submit"] {
+    width: 100%;
+  }
+}
+/*footer*/
+footer {
+  /* position:absolute; */
+  bottom: 0;
+  width: 100%;
+  height: 30px; /* Height of the footer */
+  background: rgb(238, 125, 32);
+}
